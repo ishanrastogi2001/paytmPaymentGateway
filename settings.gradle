@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url 'https://jitpack.io'}
+        maven{
+            url "https://artifactory.paytm.in/libs-release-local"
+        }
+    }
+}
+rootProject.name = "Paytm Payment Gateway2"
+include ':app'
